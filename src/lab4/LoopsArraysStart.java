@@ -1,6 +1,6 @@
 package lab4;
 
-public class Program {
+public class LoopsArraysStart {
 
     public static void main(String[] args) {
         int[] numbers = {1, 3, -5, 7, 0, 4, 6, 8};

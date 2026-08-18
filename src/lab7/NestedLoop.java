@@ -1,6 +1,6 @@
 package lab7;
 
-public class Program {
+public class NestedLoop {
 
 	public static void main(String[] args) {
 		multiplicationTable();

@@ -1,6 +1,6 @@
 package lab6;
 
-public class Program {
+public class DoubleMoney {
 
 	public static void main(String[] args) {
 		account();

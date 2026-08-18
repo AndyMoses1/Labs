@@ -2,7 +2,7 @@ package lab5;
 
 import lab2.Lab2;
 
-public class Program {
+public class GradesForStudents {
 
 	public static void main(String[] args) {
 		String[] students = { "Alice", "Bob", "Charlie", "Priya", "Sam" };
