@@ -11,10 +11,10 @@ public class Game extends Canvas {
 		new Game();
 	}
 
-	Ball[] balls = new Ball[] {
-			new Ball(10, 10, 20, 20),
-			new Ball(150, 50, 30, 30, 2, -1),
-			new Ball(200, 200, 15, 15, -3, 2)
+	Ball[] balls = {
+		new Ball(10, 10, 20, 20),
+		new Ball(150, 50, 30, 30, 2, -1),
+		new Ball(200, 200, 15, 15, -3, 2)
 	};
 	
 	private int width = 300;
