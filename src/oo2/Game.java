@@ -1,6 +1,7 @@
 package oo2;
 
 import java.awt.*;
+import java.awt.Color;
 import java.awt.event.*;
 import java.util.*;
 import java.util.Timer;
@@ -11,10 +12,12 @@ public class Game extends Canvas {
 		new Game();
 	}
 
-	Ball[] balls = {
-		new Ball(10, 10, 20, 20),
-		new Ball(150, 50, 30, 30, 2, -1),
-		new Ball(200, 200, 15, 15, -3, 2)
+	Shape[] shapes = {
+		new Shape(ShapeType.Oval, Color.BLUE, 10, 10, 20, 20, -1, 1),
+		new Shape(ShapeType.Rectangle, Color.CYAN, 150, 50, 30, 30, 2, -1),
+		new Shape(ShapeType.Arc, Color.GREEN, 200, 200, 30, 45, -3, 2),
+		// 12 constructor chaining
+		new Shape(5, 5, 15)
 	};
 	
 	private int width = 300;
@@ -27,7 +30,7 @@ public class Game extends Canvas {
 		frame.pack();
 		frame.setVisible(true);
 		
-		Ball.setWorld(width, height);
+		Shape.setWorld(width, height);
 				
 		Timer t = new Timer();
 		TimerTask tt = new TimerTask() {
@@ -50,8 +53,8 @@ public class Game extends Canvas {
 	}
 
 	public void draw() {
-		for (Ball ball : balls) {
-			ball.move();
+		for (Shape shape : shapes) {
+			shape.move();
 		}
 
 		this.repaint();
@@ -59,12 +62,29 @@ public class Game extends Canvas {
 
 	public void paint(Graphics g) {
 		g.drawRect(0, 0, width, height);
-		g.setColor(Color.RED);
+		g.setColor(Color.GRAY);
 		g.fillRect(0, 0, width, height);
-		g.setColor(Color.blue);
 		
-		for (Ball ball : balls) {
-			g.fillOval(ball.x,  ball.y, ball.w, ball.h);
+		for (Shape shape : shapes) {
+			g.setColor(shape.getColour());
+			
+			switch (shape.getShapeType()) {
+		     case Rectangle:
+		         g.fillRect(shape.x, shape.y, shape.w, shape.h);
+		         break;
+		     case ThreeDRectangle:
+		         g.fill3DRect(shape.x, shape.y, shape.w, shape.h, true);
+		         break;
+		     case RoundRectangle:
+		         g.fillRoundRect(shape.x, shape.y, shape.w, shape.h, shape.w / 4, shape.h / 4);
+		         break;
+		     case Oval:
+		         g.fillOval(shape.x, shape.y, shape.w, shape.h);
+		         break;
+		     case Arc:
+		         g.fillArc(shape.x, shape.y, shape.w, shape.h, 0, 180);
+		         break;
+		     }
 		}		
 	}
 }
