@@ -17,5 +17,8 @@ public class Program {
 			System.out.println(shape.getCharacteristics());
 		}
 	}
+	//How can we store a shape, like a Rectangle, in a list of Shape objects? 
+	
+	//Because Rectangle extends Shape, every Rectangle is a Shape — so a Shape reference can hold one, and ArrayList<Shape> accepts it
 
 }
