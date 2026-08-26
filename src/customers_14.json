@@ -1,0 +1,22 @@
+[
+   {
+        "id": 1,
+        "name": "Alice Johnson",
+        "city": "London"
+    },
+    {
+        "id": 2,
+        "name": "Bob Smith",
+        "city": "Bristol"
+    },
+    {
+        "id": 3,
+        "name": "Charlie Brown",
+        "city": "London"
+    },
+	{
+        "id": 4,
+        "name": "Daisy Evans",
+        "city": "Manchester"
+    }
+]

@@ -15,4 +15,13 @@ module Labs {
 	// Gson builds Customer objects and sets their fields by reflection,
 	// which the module system blocks unless the package is opened to it.
 	opens reading_json_12_2 to gson;
+
+	// Jackson. databind requires the other two transitively, but naming
+	// all three is explicit and does not rely on that.
+	requires com.fasterxml.jackson.databind;
+	requires com.fasterxml.jackson.core;
+	requires com.fasterxml.jackson.annotation;
+
+	// Jackson sets fields reflectively, same as gson.
+	opens streams_14 to com.fasterxml.jackson.databind;
 }

@@ -58,6 +58,7 @@ class MSSQLExample {
 				+ "(company_no, contact_code, contact_name, job_title, tel) "
 				+ "VALUES (?, ?, ?, ?, ?)";
 
+		
 		try (Connection conn = DriverManager.getConnection(url);
 				PreparedStatement ps = conn.prepareStatement(sql)) {
 
