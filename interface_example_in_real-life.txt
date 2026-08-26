@@ -1,0 +1,64 @@
+interface Notifier {
+	void send(String message);
+}
+
+class EmailNotifier implements Notifier {
+	public void send(String message) {
+		System.out.println("Email: " + message);
+	}
+}
+
+class SmsNotifier implements Notifier {
+	public void send(String message) {
+		System.out.println("SMS: " + message);
+	}
+}
+//------------------------------------------------------
+public class MessageService {
+
+	public static void main(String[] args) {
+		demo1();
+		demo2();
+	}
+
+	private static void demo1() {
+		Notifier ns = new EmailNotifier();
+		sendMessage("Hello", ns);
+		
+		ns = new SmsNotifier();
+		sendMessage("Hello", ns);
+	}
+	
+	private static void sendMessage(String msg, Notifier service) {
+		service.send(msg);
+	}
+
+
+	private static void demo2() {
+		NotificationHub hub = new NotificationHub();
+		hub.register(new EmailNotifier());
+		hub.register(new SmsNotifier());
+		
+		hub.notifyAll("Hello World!");
+	}
+}
+
+//------------------------------------------------------
+
+import java.util.ArrayList;
+
+public class NotificationHub{
+    private ArrayList<Notifier> notifiers = new ArrayList<>();
+
+    public void register(Notifier n) {
+        notifiers.add(n);
+    }
+
+    public void notifyAll(String message) {
+        for (Notifier n : notifiers) {
+            System.out.println("Sending via: " + n.getClass().getName());
+            n.send(message);
+        }
+    }
+}
+
