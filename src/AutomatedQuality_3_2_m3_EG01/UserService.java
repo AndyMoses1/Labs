@@ -1,15 +1,20 @@
 package AutomatedQuality_3_2_m3_EG01;
 
 public class UserService {
+    private UserServiceDatabase userServiceDatabase;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public UserService(UserServiceDatabase userServiceDatabase) {
+	    this.userServiceDatabase = userServiceDatabase;
 	}
 	
 	public void RegisterUser(String username, String password, String role) {
 		// Username must not be null or only whitespace
 		if (username == null || username.trim().isEmpty()) {
             throw new IllegalArgumentException("Username may not be null or empty");
+        }
+
+        if (userServiceDatabase.userExists(username)) {
+            throw new IllegalArgumentException("Username already exists");
         }
 
 		if (password.length() < 8) {
@@ -40,6 +45,8 @@ public class UserService {
             default:
                 throw new IllegalArgumentException("Invalid role");
         }
+
+        userServiceDatabase.addUser(username, password, role);
 	}
 	
 

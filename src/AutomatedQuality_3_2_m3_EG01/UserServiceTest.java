@@ -9,7 +9,7 @@ class UserServiceTest {
 
 	@BeforeEach
     public void setUp() throws Exception  {
-        userService = new UserService();
+        userService = new UserService(new UserRepositoryStub());
     }
 
     @AfterEach
@@ -20,6 +20,16 @@ class UserServiceTest {
     @Test
     public void valid_user_is_successfully_registered() {
         assertDoesNotThrow(() -> userService.RegisterUser("andrew.moses", "Password1!", "admin"));
+    }
+
+    @Test
+    public void registering_a_duplicate_username_throws_exception() {
+    	userService.RegisterUser("andrew.moses", "Password1!", "admin");
+    	
+    	IllegalArgumentException ex = assertThrows(IllegalArgumentException.class,
+                () -> userService.RegisterUser("andrew.moses", "Password1!", "admin"));
+
+            assertEquals("Username already exists", ex.getMessage());
     }
 
     @Test
@@ -64,12 +74,12 @@ class UserServiceTest {
     	IllegalArgumentException ex = assertThrows(IllegalArgumentException.class,
                 () -> userService.LoginUser("", "Password1!"));
 
-            assertEquals("Username cannot be null or empty", ex.getMessage());
+        assertEquals("Username cannot be null or empty", ex.getMessage());
     }
     
     @Test
     public void wrong_password_on_login_returns_false() {
-    	userService.LoginUser("andrew.moses", "Password1!");
+    	userService.RegisterUser("andrew.moses", "Password1!", "admin");
 
         assertFalse(userService.LoginUser("andrew.moses", "wrong password"));
     }
