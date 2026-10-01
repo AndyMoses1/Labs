@@ -41,6 +41,7 @@ public class UserService {
                 throw new IllegalArgumentException("Invalid role");
         }
 	}
+	
 
 	public boolean LoginUser(String username, String password) {
         if (username == null || username.trim().isEmpty()) {
@@ -57,5 +58,7 @@ public class UserService {
 
         return false;
     }
+	
+	//next steps - extract out username == null check in both LoginUser & HasAccess
 
 }
