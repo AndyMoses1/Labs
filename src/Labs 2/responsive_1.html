@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QA Training</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body * {
+            border:1px solid grey;
+        }   
+    </style>
+</head>
+<body>
+    <!--Make sure header is placed on top taking the entire width-->
+    <header>
+        <h1>QA Training</h1>
+        <h3>QA is the largest tech training company in the UK</h3>
+    </header>
+
+    <!--Make sure nav is placed on the left, below header, taking 1/3 of display-->
+    <nav>
+        <h3>Our courses</h3>
+        <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li>Web development</li>
+            <li>Digital Skills</li>
+            <li>Data analysis</li>
+            <li>Project management</li>
+        </ul>
+    </nav>
+
+    <!-- Main content sits between the navigation and related links. -->
+    <!-- Limit the height of nav, main and aside using auto scrollbars. -->
+    <main>
+        <h2>Learn. To Change</h2>
+        <p>Build your teams' tech skills with the latest training in AI, cloud, and data.
+            QA is the largest tech training company in the UK and the fastest growing in the US, empowering organisations to learn, master, and apply new tech skills at scale.</p>
+
+        <h3>About our Web development course</h3>
+        <p>You'll begin at square one, learning how the Web and web pages work, and then steadily build from there. By the end of the course, you'll have the skills to create a responsive website. Learn how to use the latest techniques, best practices, and current web standards, including HTML5 and CSS3.</p>
+
+        <h3>Target Audience</h3>
+        <p>The course is aimed at anyone who has been charged with setting up a website or developing web content, as well as those interested in understanding the technologies used to deliver web content.</p>
+
+        <h3>What we do</h3>
+        <ul>
+            <li>Instructor-led learning: courses and training tailored to your business</li>
+            <li>Online learning platform: flexible access to a wide range of courses</li>
+            <li>Apprenticeships and early talent: develop tech talent with real-world experience</li>
+        </ul>
+        <div class="imageContainer">
+            <img src="https://www.qa.com/media/fdxirdvq/wb41_ilt-banner-image.jpg?width=900" alt="Learners taking part in instructor-led training">
+        </div>
+    </main>
+    <!-- Place related links to the right of the main content. -->
+    <aside>
+        <ul>
+            <li>Total Learning      </li>
+            <li>Virtual Classroom   </li>
+            <li>Classroom           </li>
+            <li>Online (self-paced) </li>
+            <li>Blended             </li>
+        </ul>
+    </aside>
+    <!-- footer should appear at the bottom of the page taking 100% of the width -->
+    <footer><h3>QA is driving AI transformation - <time id="current-time"></time></h3></footer>
+    <script>
+        document.querySelector("#current-time").textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
