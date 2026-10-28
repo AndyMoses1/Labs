@@ -1,17 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>QA Training</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
             box-sizing: border-box;
         }
 
-        body * {
-            border:1px solid grey;
-        }   
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 5vh;
+        }
+
+        header, nav, main, aside, footer {
+            padding: 10px;
+        }
+
+        header {
+            width: 100%;
+            height: 15vh;
+            background-color: #393cff;
+            color: white;
+            min-height: 135px;
+        }
+
+        nav, aside, main {
+            height: 75vh;
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        aside, main {
+            overflow-y: auto;
+        }
+       
+        nav {
+            width: 33%;
+            background-color: #a5c9f3;
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            padding: 8px;
+            text-decoration: underline;
+        }
+
+        nav ul li:hover {
+            border-bottom: none;
+            color: #0505bf;
+            text-decoration: none;
+        }
+
+        main {
+            width: 47%;
+            background-color: #dbecd3;
+            display: inline-block;
+        }
+
+        main img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        aside {
+            width: 20%;
+            background-color: #ecbcbc;
+            display: inline-block;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #feedb5;
+            text-align: center;
+            position: absolute;
+            height: 10vh;
+        }
+
+        @media screen and (max-width: 900px) {            
+            nav, main, aside {
+                width: 100%;
+                display: block;
+                height: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -32,33 +114,32 @@
             <li>Data analysis</li>
             <li>Project management</li>
         </ul>
-    </nav>
+    </nav><main>
+    <h2>Learn. To Change</h2>
+    <p>
+        Build your teams' tech skills with the latest training in AI, cloud, and data.
+        QA is the largest tech training company in the UK and the fastest growing in the US, <br />empowering organisations to learn, master, <br />and apply new tech skills at scale.
 
-    <!-- Main content sits between the navigation and related links. -->
-    <!-- Limit the height of nav, main and aside using auto scrollbars. -->
-    <main>
-        <h2>Learn. To Change</h2>
-        <p>Build your teams' tech skills with the latest training in AI, cloud, and data.
-            QA is the largest tech training company in the UK and the fastest growing in the US, empowering organisations to learn, master, and apply new tech skills at scale.</p>
-
-        <h3>About our Web development course</h3>
-        <p>You'll begin at square one, learning how the Web and web pages work, and then steadily build from there. By the end of the course, you'll have the skills to create a responsive website. Learn how to use the latest techniques, best practices, and current web standards, including HTML5 and CSS3.</p>
-
+        <h3>About our Web development course:</h3>
+        You'll begin at square one, learning how the Web and web pages work, <br />and then steadily build from there. By the end of the course, you'll have the skills to create a website that is responsive to the device that it is being viewed on and contains features needed for good website development. Learn how to use the latest techniques, best practices, and current web standards - including HTML5 and CSS3.
         <h3>Target Audience</h3>
-        <p>The course is aimed at anyone who has been charged with setting up a website or developing web content, as well as those interested in understanding the technologies used to deliver web content.</p>
-
-        <h3>What we do</h3>
-        <ul>
-            <li>Instructor-led learning: courses and training tailored to your business</li>
-            <li>Online learning platform: flexible access to a wide range of courses</li>
-            <li>Apprenticeships and early talent: develop tech talent with real-world experience</li>
-        </ul>
-        <div class="imageContainer">
-            <img src="https://www.qa.com/media/fdxirdvq/wb41_ilt-banner-image.jpg?width=900" alt="Learners taking part in instructor-led training">
-        </div>
-    </main>
-    <!-- Place related links to the right of the main content. -->
-    <aside>
+        The course is aimed at anyone who has been charged with setting up a <br />website or developing web content as well as those interested in getting a better understanding of the many technologies used to deliver web content.
+    <p>What we do</p>
+    <ul>
+        <li>Instructor-led learning >                                   </li>
+        <li>Best for instructor-led cohorts: courses and training to    </li>
+        <li>meet the requirements of your business                      </li>
+        <li>Online learning platform >                                  </li>
+        <li>Best for flexible learning: subscribe to our platform and   </li>
+        <li>gain access to unlimited courses                            </li>
+        <li>Apprenticeships & early talent >                            </li>
+        <li>Best for hiring and upskilling: Train tech talent with real-world experience</li>
+    </ul>
+    </p>
+    <div class="imageContainer">
+        <img src="https://www.qa.com/media/fdxirdvq/wb41_ilt-banner-image.jpg?width=900" alt="Teaching classroom">
+    </div>
+    </main><aside>
         <ul>
             <li>Total Learning      </li>
             <li>Virtual Classroom   </li>
