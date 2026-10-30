@@ -1,0 +1,17 @@
+.basket-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.basket-item-actions .btn {
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.basket-item-actions .btn.btn-danger {
+    padding: 5px 13px
+}

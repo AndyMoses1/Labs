@@ -1,0 +1,170 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "ProductName": "Chai",
+      "UnitPrice": 18,
+      "UnitsInStock": 0,
+      "Suppliers": [
+        {
+          "CompanyName": "Exotic Liquids"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "ProductName": "Chang",
+      "UnitPrice": 19,
+      "UnitsInStock": 0,
+      "Suppliers": [
+        {
+          "CompanyName": "Exotic Liquids"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "ProductName": "Aniseed Syrup",
+      "UnitPrice": 10,
+      "UnitsInStock": 13,
+      "Suppliers": [
+        {
+          "CompanyName": "Exotic Liquids"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "ProductName": "Cajun Seasoning",
+      "UnitPrice": 22,
+      "UnitsInStock": 52,
+      "Suppliers": [
+        {
+          "CompanyName": "Cajun Delights"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "ProductName": "Gumbo Mix",
+      "UnitPrice": 21.35,
+      "UnitsInStock": 40,
+      "Suppliers": [
+        {
+          "CompanyName": "Cajun Delights"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "ProductName": "Strawberry Jam",
+      "UnitPrice": 25,
+      "UnitsInStock": 119,
+      "Suppliers": [
+        {
+          "CompanyName": "Homestead"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "ProductName": "Apple Butter",
+      "UnitPrice": 15,
+      "UnitsInStock": 59,
+      "Suppliers": [
+        {
+          "CompanyName": "Homestead"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "ProductName": "Orange Marmalade",
+      "UnitPrice": 20,
+      "UnitsInStock": 70,
+      "Suppliers": [
+        {
+          "CompanyName": "Homestead"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "ProductName": "Raspberry Jam",
+      "UnitPrice": 30,
+      "UnitsInStock": 9,
+      "Suppliers": [
+        {
+          "CompanyName": "Homestead"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "ProductName": "Blueberry Jam",
+      "UnitPrice": 35,
+      "UnitsInStock": 20,
+      "Suppliers": [
+        {
+          "CompanyName": "Homestead"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "ProductName": "Peach Jam",
+      "UnitPrice": 40,
+      "UnitsInStock": 22,
+      "Suppliers": [
+        {
+          "CompanyName": "Homestead"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "ProductName": "Bantha Milk",
+      "UnitPrice": 45,
+      "UnitsInStock": 45,
+      "Suppliers": [
+        {
+          "CompanyName": "Intergalactic Foods"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "ProductName": "Womp Rat Stew",
+      "UnitPrice": 50,
+      "UnitsInStock": 30,
+      "Suppliers": [
+        {
+          "CompanyName": "Intergalactic Foods"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "ProductName": "Nerf Steak",
+      "UnitPrice": 155,
+      "UnitsInStock": 14,
+      "Suppliers": [
+        {
+          "CompanyName": "Intergalactic Foods"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "ProductName": "Tatooine Spice Mix",
+      "UnitPrice": 18.75,
+      "UnitsInStock": 24,
+      "Suppliers": [
+        {
+          "CompanyName": "Intergalactic Foods"
+        }
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

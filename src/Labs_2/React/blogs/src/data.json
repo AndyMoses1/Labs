@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "title": "Start coding in React",
+      "body": "Let us learn by example",
+      "dateCreated": "2019-05-04T15:00:00.000Z",
+      "author": "Mike"
+    },
+    {
+      "id": "2",
+      "title": "New food outlet",
+      "body": "Here is how you can create a new food outlet",
+      "dateCreated": "2019-05-04T15:30:00.000Z",
+      "author": "Sean"
+    },
+    {
+      "id": "3",
+      "title": "Banks",
+      "body": "This is how all banks work",
+      "dateCreated": "2019-05-04T15:45:00.000Z",
+      "author": "Jonathan"
+    },
+    {
+      "id": "4",
+      "title": "Healthy living",
+      "body": "How to live longer and gain better health",
+      "dateCreated": "2019-05-04T16:00:00.000Z",
+      "author": "Sasha"
+    },
+    {
+      "name": "aaaa",
+      "title": "bbbbbb",
+      "age": 9,
+      "message": "new blog 1",
+      "id": "MozOeifOQ1s"
+    },
+    {
+      "name": "Andy",
+      "title": "This",
+      "message": "Message 2",
+      "id": "qkZ8xhoZhj0"
+    },
+    {
+      "author": "Author",
+      "title": "Title",
+      "message": "Message",
+      "id": "xJDsTozdGi0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
